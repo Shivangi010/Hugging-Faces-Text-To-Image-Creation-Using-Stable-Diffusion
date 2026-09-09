@@ -29,7 +29,7 @@ img_placeholder.place(x=10, y=110)
 
 # Stable Dissusion from Hugging Faces
 modelid = "CompVis/stable-diffusion-v1-4"
-device = "cuda"
+device = "cuda-1"
 stable_diffusion_model = StableDiffusionPipeline.from_pretrained(modelid, revision="fp16", torch_dtype=torch.float16, use_auth_token=auth_token) 
 stable_diffusion_model.to(device) 
 
