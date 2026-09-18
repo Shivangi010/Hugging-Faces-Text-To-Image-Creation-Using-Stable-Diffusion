@@ -46,7 +46,7 @@ def generate():
     img = ImageTk.PhotoImage(image)
     img_placeholder.configure(image=img) 
 
-
+#Please PULL this comment
 trigger = ctk.CTkButton(height=40, width=120, text_font=("Arial", 15), text_color="black", fg_color="white", command=generate) 
 trigger.configure(text="Generate")
 trigger.place(x=206, y=60) 
